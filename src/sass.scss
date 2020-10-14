@@ -1,0 +1,6 @@
+@use "@material/theme" with (
+  $primary: #ff00ff,
+  $secondary: #76ff03,
+  $background: #fff,
+);
+@use "material-components-web";

@@ -1,0 +1,16 @@
+.icon { grid-area: main; }
+.label { grid-area: right; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'main right';
+  grid-gap: 2px;
+  padding: 2px;
+  width: 80px;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 0px 0;
+  font-size: 18px;
+}
