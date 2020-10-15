@@ -12,9 +12,9 @@ class Contact extends React.Component {
           marginBottom: 100,
           padding: 20,
           color: "white"
-        }}>
+        }}> 
 
-        <form style={{ minWidth: "200px", maxWidth: "800px" }}>
+        <form style={{ minWidth: "200px", maxWidth: "800px", height: "1000px" }}>
           <h1>Contact Form</h1>
 
           <FormControl margin="normal" fullWidth style={{ color: "white" }}>

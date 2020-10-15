@@ -1,7 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 export const theme = createMuiTheme({
-  palette: {
+  palette: { 
     primary: {
       main: '#333333', // FF6E00
     },
@@ -21,7 +21,7 @@ export const theme = createMuiTheme({
 });
 
 export const titleStyle = {
-  marginTop: '15px',
+  marginTop: '40px',
   fontFamily: 'Special Elite, cursive',
   fontSize: '30px'
 };

@@ -1,7 +1,7 @@
 export const posts = [
 {
   title: "The Rest of Us",
-  excerpt: "The rest of us is a game within a game, a meta game if you will, a game without borders, without limits. It is the ultimate universe of universes! Nah, it's just a weird simulation game I'm using to teach myself tensorflow but of course no one cares because I don't hae a PhD, so... here I am!",
+  excerpt: "The rest of us is a game within a game, a meta game if you will, a game without borders, without limits. It is the ultimate universe of universes! Nah, it's just a weird simulation game I'm using to teach myself tensorflow!",
   image: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fukrainetrek.com%2Fblog%2Fwp-content%2Fuploads%2F2014%2F10%2Fkyiv-city-at-night-ukraine-2.jpg&f=1&nofb=1"
 },
 {
@@ -12,7 +12,7 @@ export const posts = [
 {
   title: "Weyrmount",
   excerpt: "Welcome to the Weyrmount, the other home of the Ultima Dragons!",
-  image: "http://www.weyrmount.org/img/weyrmount.png"
+  image: "https://github.com/wizmint/rest-of-us-web/blob/master/src/weyrmount.png?raw=true"
 },
 {
   title: "Ultima Dragons 25th Anniversary Convention",

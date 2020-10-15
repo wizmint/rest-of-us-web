@@ -8,16 +8,15 @@ import { Home, Book, AccountBox } from '@material-ui/icons';
 import './navbar.css';
 
 function NavBar(props) {
-
   return (
     <List component="nav">
       <ListItem component="div" style={{ marginLeft: -58 }} >
         <ListItemText inset>
           <Link href="https://www.google.com">
-            <TypoGraphy color="inherit" variant="title">
+            <TypoGraphy color="inherit">
                 <div class="grid-container">
                   <div><Home /></div>
-                  <div>Home</div>
+                  <div style={{ fontSize: 14 }}>Home</div>
                 </div>
             </TypoGraphy>
           </Link>
@@ -27,7 +26,7 @@ function NavBar(props) {
             <TypoGraphy color="inherit" variant="title">
               <div class="grid-container">
                 <div><Book /></div>
-                <div>Projects</div>
+                <div style={{ fontSize: 14 }}>Projects</div>
               </div>
             </TypoGraphy>
         </ListItemText>
@@ -36,7 +35,7 @@ function NavBar(props) {
             <TypoGraphy color="inherit" variant="title">
               <div class="grid-container">
                 <div><AccountBox /></div>
-                <div>Contact</div>
+                <div style={{ fontSize: 14 }}>Contact</div>
               </div>
             </TypoGraphy>
         </ListItemText>

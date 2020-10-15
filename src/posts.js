@@ -14,7 +14,7 @@ function Posts(props) {
       <Grid container spacing={40} justify="center">
         { posts.map(post => (
           <Grid item key={post.title}>
-            <Card style={{ margin: 10, minWidth: 300, maxWidth: 600, maxHeight: 500, backgroundColor: 'green' }}>
+            <Card style={{ margin: 10, minWidth: 300, maxWidth: 600, maxHeight: 500, backgroundColor: '#403350', opacity: 1 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
