@@ -20,6 +20,11 @@ export const posts = [
   image: "https://ksr-ugc.imgix.net/assets/013/630/207/eedde1cd717a71ce82a027f7442d69f4_original.png?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1473311074&auto=format&frame=1&q=92&s=94e1bb8d48b38b00237dc179c35abc58"
 },
 {
+  title: "Music Experiments",
+  excerpt: "A collection of music I've recorded and/or composed.",
+  image: "https://i.ytimg.com/vi/uv5T3TGjb7E/maxresdefault.jpg"
+},
+{
   title: "Curriculum Vitae",
   excerpt: "I am a senior applications engineer and designer with 10+ years experience leading teams and architecting solutions for many clients in the HealthCare industry. Find out more about me and download my resume here!",
   image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.businessnewsdaily.com%2Fimages%2Fi%2F000%2F012%2F480%2Foriginal%2Fresume.jpg%3F1474900624&f=1&nofb=1"

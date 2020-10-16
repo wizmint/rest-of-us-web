@@ -9,30 +9,30 @@ class Contact extends React.Component {
           display: "flex", 
           justifyContent: "center",
           margin: 20, 
-          marginBottom: 100,
+          marginBottom: 50,
           padding: 20,
           color: "white"
         }}> 
 
-        <form style={{ minWidth: "200px", maxWidth: "800px", height: "1000px" }}>
-          <h1>Contact Form</h1>
+        <form style={{ minWidth: "200px", maxWidth: "600px" }}>
+          <h1 style={{ fontWeight: "normal", fontSize: "28px" }}>Contact Form</h1>
 
-          <FormControl margin="normal" fullWidth style={{ color: "white" }}>
+          <FormControl margin="normal" fullWidth style={{ borderBottom: "2px dotted #777777" }}>
             <InputLabel htmlFor="name" style={{ color: "white" }}>Name</InputLabel>
             <Input id="name" type="text" style={{ color: "white" }} />
           </FormControl>
 
-          <FormControl margin="normal" fullWidth>
+          <FormControl margin="normal" fullWidth style={{ borderBottom: "2px dotted #777777" }}>
             <InputLabel htmlFor="email" style={{ color: "white" }}>Email</InputLabel>
             <Input id="email" type="email" style={{ color: "white" }} />
           </FormControl>
 
-          <FormControl margin="normal" fullWidth style={{ borderColor: "white" }}>
+          <FormControl margin="normal" fullWidth style={{ borderBottom: "2px dotted #777777" }}>
             <InputLabel htmlFor="email" style={{ color: "white" }}>Message</InputLabel>
             <Input id="email" multiline rows={10} style={{ color: "white" }} />
           </FormControl>
 
-          <Button variant="contained" color="secondary" size="medium">Send</Button>
+          <Button variant="contained" color="primary" size="medium">Send</Button>
         </form>
       </div>
     );

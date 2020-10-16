@@ -3,7 +3,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 export const theme = createMuiTheme({
   palette: { 
     primary: {
-      main: '#333333', // FF6E00
+      main: '#714694', // FF6E00
     },
     secondary: {
       main: '#FF6E00', // 0091FF
@@ -16,14 +16,16 @@ export const theme = createMuiTheme({
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
-    ].join(','),
+    ].join(',')
   },
 });
 
 export const titleStyle = {
-  marginTop: '40px',
+  marginTop: '45px',
+  marginBottom: '-5px',
   fontFamily: 'Special Elite, cursive',
-  fontSize: '30px'
+  fontSize: '30px',
+  color: '#ffffff'
 };
 
 export const footerStyle = {
@@ -31,5 +33,12 @@ export const footerStyle = {
   width: '100%',
   bottom: '0',
   background: '#333333',
-  alpha: 0
-}
+  opacity: 1
+};
+
+export const listContainer = {
+  display: 'flex',
+  flexDirection: 'row',
+  padding: 0,
+  minWidth: 100
+};

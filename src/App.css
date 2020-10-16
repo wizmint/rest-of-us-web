@@ -1,3 +1,20 @@
+/**
+* @file
+* CSS file for App.js
+*/
+
+body {
+  background-image: url('./shells.png');
+  background-repeat: repeat;
+  background-color: #282233;
+}
+
+p {
+  margin: 20px;
+  width: 80%;
+  color: #aa99aa;
+}
+
 .App {
   text-align: center;
 }
@@ -11,11 +28,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-body {
-  background-image: url('./shells.png');
-  background-repeat: repeat;
 }
 
 .App-header {
@@ -43,4 +55,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
