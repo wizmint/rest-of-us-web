@@ -16,12 +16,14 @@ import { Home, Book, AccountBox } from '@material-ui/icons'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { theme, titleStyle, listContainer } from './theme.js'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
-import "./App.css"
-import "./theme.js"
-import './navbar.css'
-import HomePage from './HomePage.js'
-import ProjectsPage from './ProjectsPage.js'
-import ContactPage from './ContactPage.js'
+
+import HomePage from './components/HomePage.js'
+import Projects from './components/Projects.js'
+import Contact from './components/Contact.js'
+
+import "./css/App.css"
+import "./theme"
+import './css/navbar.css'
 
 class App extends Component {
   render() { 
@@ -76,8 +78,8 @@ class App extends Component {
         {/* SPA "pages" */}
         <Switch>
           <Route exact path="/"> <HomePage /> </Route>
-          <Route path="/projects"> <ProjectsPage /> </Route>
-          <Route path="/contact"> <ContactPage /> </Route> 
+          <Route path="/projects"> <Projects /> </Route>
+          <Route path="/contact"> <Contact /> </Route> 
         </Switch>
 
       </div></Router></div></ThemeProvider>

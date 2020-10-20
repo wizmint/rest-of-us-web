@@ -1,11 +1,11 @@
 /**
  * @file
- * Displays the projects page.
+ * Displays the home page.
  */
 
 import React from 'react'
 
-import Contact from './contact';
+import Contact from './Contact.js';
 
 //import BottomNavigation from '@material-ui/core/BottomNavigation';
 //import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -21,7 +21,8 @@ function loadLink(link) {
 }
 */
 
-function HomePage() {
+class HomePage extends React.Component {
+  render() {
     return (
       <div style={{ marginTop: 150}}>
         {/*<ReactPlayer url="https://youtu.be/MyG3TPyaCVw" width="100%" />*/}
@@ -41,7 +42,7 @@ function HomePage() {
         <div>
           <Contact />
         </div>
-        
+
         {/* <BottomNavigation value={0} onChange={(event, newValue) => { this.sayHello(); }} showLabels style={footerStyle}> 
           <BottomNavigationAction label="Home" style={{ color:'white' }} value="home" icon={<Home />} />
           <BottomNavigationAction label="Posts" style={{ color:'gray' }} value="posts" icon={<Book />} />
@@ -49,6 +50,7 @@ function HomePage() {
         </BottomNavigation> */}
       </div>
     );
+  }
 }
 
 export default HomePage;

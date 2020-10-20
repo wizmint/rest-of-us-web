@@ -1,3 +1,8 @@
+/**
+ * @file
+ * Displays the contact page.
+ */
+
 import React from "react";
 import { FormControl, InputLabel, Input, Button } from "@material-ui/core";
 
@@ -10,6 +15,7 @@ class Contact extends React.Component {
           justifyContent: "center",
           margin: 20, 
           marginBottom: 50,
+          marginTop: 140,
           padding: 20,
           color: "white"
         }}> 

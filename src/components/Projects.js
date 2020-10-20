@@ -6,11 +6,14 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import { Grid, Typography } from "@material-ui/core";
-import { posts } from "./dummy-posts";
+import { posts } from "./dummy-posts.js";
 
-function Posts(props) {
+//function Posts(props) {
+
+class Projects extends React.Component {
+  render() {
     return (
-      <div style={{ marginTop: 60 }} >
+      <div style={{ marginTop: 130 }} >
         <Grid container spacing={40} justify="center">
           { posts.map(post => (
             <Grid item key={post.title}>
@@ -25,7 +28,7 @@ function Posts(props) {
                     title={post.title} />
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2" style={{ fontWeight: "normal"}}>{post.title}</Typography>
-                    <Typography component="p">{post.excerpt}</Typography>
+                    <Typography component="p" style={{ width: "100%" }}>{post.excerpt}</Typography>
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
@@ -38,6 +41,7 @@ function Posts(props) {
         </Grid>
       </div>
     );
+  }
 }
 
-export default Posts;
+export default Projects;

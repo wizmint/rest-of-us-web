@@ -4,7 +4,7 @@
 */
 
 body {
-  background-image: url('./shells.png');
+  background-image: url('../resources/shells.png');
   background-repeat: repeat;
   background-color: #282233;
 }
