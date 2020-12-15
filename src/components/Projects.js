@@ -7,13 +7,16 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import { Grid, Typography } from "@material-ui/core";
 import { posts } from "./dummy-posts.js";
-
-//function Posts(props) {
+import { Home, Book, AccountBox } from '@material-ui/icons'
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { footerStyle } from '../theme.js' 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 class Projects extends React.Component {
   render() {
     return (
-      <div style={{ marginTop: 130 }} >
+      <div style={{ marginTop: 130, marginBottom: 100 }} >
         <Grid container spacing={40} justify="center">
           { posts.map(post => (
             <Grid item key={post.title}>
@@ -39,6 +42,25 @@ class Projects extends React.Component {
             </Grid>
           ))}
         </Grid>
+
+       <BottomNavigation value={0} onChange={(event, newValue) => { 
+          //this.sayHello(); 
+          switch(newValue) {
+            case "home":
+              break;
+            case "projects":
+              break;
+            case "contact":
+              break;
+            default:
+              break;
+          }
+          alert(newValue);
+        }} showLabels style={footerStyle}> 
+        <BottomNavigationAction label="Home" style={{ color:'gray' }} value="home" icon={<Home />} />
+        <BottomNavigationAction label="Projects" style={{ color:'white' }} value="projects" icon={<Book />} />
+        <BottomNavigationAction label="Contact" style={{ color:'gray' }} value="contact" icon={<AccountBox />} />
+      </BottomNavigation> 
       </div>
     );
   }

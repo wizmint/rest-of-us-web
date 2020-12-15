@@ -4,11 +4,12 @@
  */
 
 import React from 'react'
-
 import Contact from './Contact.js';
-
-//import BottomNavigation from '@material-ui/core/BottomNavigation';
-//import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { Home, Book, AccountBox } from '@material-ui/icons'
+import { footerStyle } from '../theme.js'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 /*
 function sayHello() {
@@ -43,11 +44,14 @@ class HomePage extends React.Component {
           <Contact />
         </div>
 
-        {/* <BottomNavigation value={0} onChange={(event, newValue) => { this.sayHello(); }} showLabels style={footerStyle}> 
+        <BottomNavigation value={0} onChange={(event, newValue) => { 
+            //this.sayHello(); 
+            alert(newValue);
+          }} showLabels style={footerStyle}> 
           <BottomNavigationAction label="Home" style={{ color:'white' }} value="home" icon={<Home />} />
-          <BottomNavigationAction label="Posts" style={{ color:'gray' }} value="posts" icon={<Book />} />
+          <BottomNavigationAction label="Projects" style={{ color:'gray' }} value="projects" icon={<Book />} />
           <BottomNavigationAction label="Contact" style={{ color:'gray' }} value="contact" icon={<AccountBox />} />
-        </BottomNavigation> */}
+        </BottomNavigation> 
       </div>
     );
   }

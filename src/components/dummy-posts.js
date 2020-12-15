@@ -12,7 +12,7 @@ export const posts = [
 {
   title: "Weyrmount",
   excerpt: "Welcome to the Weyrmount, the other home of the Ultima Dragons!",
-  image: "https://github.com/wizmint/rest-of-us-web/blob/master/src/weyrmount.png?raw=true"
+  image: "https://github.com/wizmint/rest-of-us-web/blob/master/src/resources/weyrmount.png?raw=true"
 },
 {
   title: "Ultima Dragons 25th Anniversary Convention",

@@ -5,6 +5,10 @@
 
 import React from "react";
 import { FormControl, InputLabel, Input, Button } from "@material-ui/core";
+import { Home, Book, AccountBox } from '@material-ui/icons'
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { footerStyle } from '../theme.js' 
 
 class Contact extends React.Component {
   render() {
@@ -40,6 +44,16 @@ class Contact extends React.Component {
 
           <Button variant="contained" color="primary" size="medium">Send</Button>
         </form>
+
+       <BottomNavigation value={0} onChange={(event, newValue) => { 
+        //this.sayHello(); 
+      alert(newValue);
+    }} showLabels style={footerStyle}> 
+        <BottomNavigationAction label="Home" style={{ color:'gray' }} value="home" icon={<Home />} />
+        <BottomNavigationAction label="Projects" style={{ color:'gray' }} value="posts" icon={<Book />} />
+        <BottomNavigationAction label="Contact" style={{ color:'white' }} value="contact" icon={<AccountBox />} />
+      </BottomNavigation> 
+
       </div>
     );
   }

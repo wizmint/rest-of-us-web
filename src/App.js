@@ -12,7 +12,6 @@ import TypoGraphy from '@material-ui/core/Typography'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
-import { Home, Book, AccountBox } from '@material-ui/icons'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { theme, titleStyle, listContainer } from './theme.js'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
@@ -24,6 +23,11 @@ import Contact from './components/Contact.js'
 import "./css/App.css"
 import "./theme"
 import './css/navbar.css'
+
+import { Home, Book, AccountBox } from '@material-ui/icons'
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { footerStyle } from './theme.js' 
 
 class App extends Component {
   render() { 
